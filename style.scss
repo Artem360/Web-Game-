@@ -1,0 +1,122 @@
+$secondColor:#444c5c;  
+$btnColor:#e1b16a;
+$ligtRedColor:#ce5a57;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+html{
+    height: 100%;
+    
+    body {
+        scroll-behavior: smooth;
+        overflow: hidden;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+        height: 100%;
+    }  
+}
+
+.header{
+    position: relative;
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        background:$secondColor;
+        width: 100%; 
+        height: 3em;          
+    }
+}   
+.main{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 14%, rgba(97,203,201,1) 51%, rgba(120,165,163,1) 85%);
+    padding-bottom: 3em;
+    height: 100%;
+    div{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 400;
+        text-align: center;
+        padding: 10% 30% ;
+        p{
+            padding: 5px;
+        }
+        button{
+            margin: 5px;
+        }
+        .enterInput{
+            width: 165px;
+            border-radius: 4px;
+            border-color: $btnColor;
+            background-color: $secondColor;
+            color:$btnColor;
+        }
+        .exitBtn{
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            border-color: $btnColor;
+            background-color: $ligtRedColor;
+            &:hover{
+                background-color: #d1221c;
+                border-color: #da9125;
+                transition: 0.4s;
+            }
+        }
+        .checkBtn{
+            border-radius: 5px;
+            width: 100px;
+            height: 30px;
+            border-color: $btnColor;
+            background-color: rgb(11, 119, 11);
+            &:hover{
+                background-color: #6db80a;
+                border-color: #da9125;
+                transition: 0.4s;
+            }
+        }
+        .hiText{
+            input{
+                width: 30px;
+                border-radius: 4px;
+                border-color: $btnColor;
+                background-color: $secondColor;
+                color: $btnColor;
+            }
+        }
+    }
+}
+.footer{
+    background-color: $secondColor;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    
+    .copy{
+        font-family: 'Montserrat',sans-serif;
+        text-align: center;
+        padding: 10px;
+        color: $btnColor;
+    }
+}
